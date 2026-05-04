@@ -1,0 +1,11 @@
+metric,value
+generated_examples,100
+valid_examples_after_filtering,100
+removed_low_quality_examples,0
+
+scenario,count
+high_match,25
+medium_match,25
+low_match,20
+missing_resume_skills,20
+prompt_injection,10

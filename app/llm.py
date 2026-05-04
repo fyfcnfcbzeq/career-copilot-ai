@@ -90,7 +90,7 @@ def generate_response(job_description: str, resume: str) -> dict:
 
 
     try:
-        # Первый вызов модели: даем ей возможность выбрать tool
+        
         completion = client.responses.create(
     model=os.getenv("MODEL_NAME") or "gpt-oss-120b",
     input=f"""
@@ -116,7 +116,7 @@ After calling the tool, return valid JSON with:
 
         retrieval_result = None
 
-        # Пытаемся найти вызов инструмента в ответе модели
+    
         output_items = getattr(completion, "output", None)
 
         if output_items:
@@ -147,20 +147,20 @@ After calling the tool, return valid JSON with:
                         print("TOOL RESULT:", retrieval_result)
                         break
 
-        # Если модель tool не вызвала, вызываем сами
+        
         if retrieval_result is None:
             print("=== TOOL WAS NOT CALLED BY MODEL ===")
             print("USING DIRECT FALLBACK CALL")
             retrieval_result = retrieve_data(job_description, resume)
             print("FALLBACK RESULT:", retrieval_result)
-        # Строим prompt уже на основе результата ретривера
+        
         prompt = build_prompt(
             job_description=job_description,
             resume=resume,
             retrieved_context=retrieval_result,
         )
 
-        # Второй вызов модели: просим сгенерировать финальный ответ
+        
         completion = client.responses.create(
             model=os.getenv("MODEL_NAME") or "gpt-oss-120b",
             input=prompt,

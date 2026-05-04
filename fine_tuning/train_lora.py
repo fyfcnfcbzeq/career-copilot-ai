@@ -35,7 +35,7 @@ def main() -> None:
 
     training_args = TrainingArguments(
         output_dir=OUTPUT_DIR,
-        num_train_epochs=1,
+        num_train_epochs=3,
         per_device_train_batch_size=1,
         per_device_eval_batch_size=1,
         learning_rate=2e-4,
