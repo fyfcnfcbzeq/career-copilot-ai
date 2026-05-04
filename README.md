@@ -4,7 +4,7 @@ AI-powered API that analyzes a resume against a job description and returns stru
 
 ---
 
-## 🚀 API Features
+API Features
 
 - Match score between resume and job description
 - Missing skills detection
@@ -13,7 +13,7 @@ AI-powered API that analyzes a resume against a job description and returns stru
 
 ---
 
-## 🛠 Tech Stack
+Tech Stack
 
 - Python
 - FastAPI
@@ -22,7 +22,7 @@ AI-powered API that analyzes a resume against a job description and returns stru
 
 ---
 
-## ⚙️ How to run
+How to run
 
 ```bash
 pip install -r requirements.txt
@@ -35,7 +35,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 📌 Example request
+Example request
 
 ```json
 {
@@ -46,7 +46,7 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 📌 Example response
+Example response
 
 ```json
 {
@@ -59,13 +59,13 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🤖 LLM Integration
+LLM Integration
 
 The application connects to an OpenAI-compatible API via OpenRouter and generates structured JSON responses with controlled temperature.
 
 ---
 
-# 💡 Project Idea (Task 1)
+Project Idea (Task 1)
 
 The goal of this project is to build an AI-powered career assistant that helps users improve their job applications.
 
@@ -80,6 +80,6 @@ Planned features include:
 
 ---
 
-## 📌 Status
+Status
 
 Project in progress
