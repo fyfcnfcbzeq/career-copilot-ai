@@ -1,0 +1,4 @@
+﻿job_description;resume;expected_skills;predicted_skills;precision;recall
+Looking for Python developer with FastAPI, SQL, Docker, Git;Python developer with 2 years experience, worked with Django, REST API and Git;python, fastapi, sql, docker, git;docker, fastapi, git, python, sql;1.0;1.0
+Frontend developer with JavaScript, React, HTML, CSS;Frontend developer with React and CSS;javascript, react, html, css;css, html, javascript, react;1.0;1.0
+Backend developer with Python, Flask, PostgreSQL, Linux;Backend developer with Python and Linux;python, flask, postgresql, linux;flask, linux, postgresql, python;1.0;1.0

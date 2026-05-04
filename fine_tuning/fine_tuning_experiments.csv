@@ -1,0 +1,17 @@
+Столбец1;Столбец2;Столбец3;Столбец4;Столбец5;Столбец6;Столбец7;Столбец8;Столбец9
+Столбец1;;;;;;;;
+experiment;method;base_model;lora_rank;learning_rate;epochs;batch_size;goal;risk
+baseline;prompt+retriever;gpt-oss-120b;none;none;none;none;current project baseline;unstable JSON possible
+exp_1;LoRA;Qwen2.5-0.5B-Instruct;4;0.0001;2;1;low resource experiment;underfitting
+exp_2;LoRA;Qwen2.5-0.5B-Instruct;8;0.0002;3;1;balanced quality and cost;medium risk
+exp_3;LoRA;TinyLlama-1.1B-Chat;8;0.0002;3;1;small chat model baseline;lower answer quality
+exp_4;QLoRA;Phi-3-mini;8;0.0002;3;1;higher quality model with quantization;higher memory usage
+;;;;;;;;
+;;;;;;;;
+;;;;;;;;
+;cost_score;quality_score;;;;;;
+;0,55;1;;;;;;
+;0,62;2;;;;;;
+;0,7;3;;;;;;
+;0,668;3;;;;;;
+;0,78;5;;;;;;

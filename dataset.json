@@ -1,0 +1,17 @@
+[
+  {
+    "job_description": "Looking for Python developer with FastAPI, SQL, Docker, Git",
+    "resume": "Python developer with 2 years experience, worked with Django, REST API and Git",
+    "expected_skills": ["python", "fastapi", "sql", "docker", "git"]
+  },
+  {
+    "job_description": "Frontend developer with JavaScript, React, HTML, CSS",
+    "resume": "Frontend developer with React and CSS",
+    "expected_skills": ["javascript", "react", "html", "css"]
+  },
+  {
+    "job_description": "Backend developer with Python, Flask, PostgreSQL, Linux",
+    "resume": "Backend developer with Python and Linux",
+    "expected_skills": ["python", "flask", "postgresql", "linux"]
+  }
+]
